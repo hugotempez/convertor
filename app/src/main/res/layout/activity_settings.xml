@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settingsLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <TextView
+        android:id="@+id/textViewTitreSettings"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="55dp"
+        android:text="@string/title"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonReturnSettings"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="105dp"
+        android:text="Retour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switchDarkMode" />
+
+    <SeekBar
+        android:id="@+id/seekBarFontSize"
+        android:layout_width="300dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="55dp"
+        android:progressBackgroundTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFontSize" />
+
+    <TextView
+        android:id="@+id/textViewFontSizeValue"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="105dp"
+        android:text="14"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarFontSize" />
+
+    <Switch
+        android:id="@+id/switchDarkMode"
+        android:layout_width="150dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="135dp"
+        android:text="Dark Mode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFontSizeValue" />
+
+    <TextView
+        android:id="@+id/textViewFontSize"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="105dp"
+        android:text="Taille de la police"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitreSettings" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
