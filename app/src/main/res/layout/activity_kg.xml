@@ -2,8 +2,131 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/kgLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".KgActivity">
+
+    <TextView
+        android:id="@+id/textViewKgTitre"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="55dp"
+        android:text="Convertisseur Kilos vers Livres"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutKg1"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewKgTitre">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputEditKg1"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:hint="Valeur en kilogrammes"
+            android:textColor="@color/black" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutKg2"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputLayoutKg1">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputEditKg2"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:hint="Valeur en livres"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonKgToMain"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="105dp"
+        android:text="Menu principal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputLayoutKg2" />
+
+    <Button
+        android:id="@+id/buttonKgToPieds"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="105dp"
+        android:text="Conversion pieds vers mètres"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonKgToMain" />
+
+    <Button
+        android:id="@+id/buttonKgToPouces"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="105dp"
+        android:text="Conversion pouces vers mètres"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonKgToPieds" />
+
+    <Button
+        android:id="@+id/buttonKgToSpeed"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="105dp"
+        android:text="Conversion mph vers kmh"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonKgToPouces" />
+
+    <Button
+        android:id="@+id/buttonKgConvertToLivres"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="16dp"
+        android:text="Convertir en livres"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/inputLayoutKg1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewKgTitre"
+        tools:textSize="11sp" />
+
+    <Button
+        android:id="@+id/buttonKgConvertToKg"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:text="Convertir en Kg"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/inputLayoutKg2"
+        app:layout_constraintTop_toBottomOf="@+id/buttonKgConvertToLivres" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
