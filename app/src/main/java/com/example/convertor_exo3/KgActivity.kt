@@ -31,7 +31,7 @@ class KgActivity : AppCompatActivity() {
     private var darkMode: Boolean = false
     private var black = -16777216
     private var white= -1
-    private var conv = 0.45
+    private var conv = 2.2
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -62,7 +62,7 @@ class KgActivity : AppCompatActivity() {
         }
         buttonConvertToKg.setOnClickListener {
             try {
-                inputEdit1.setText((inputEdit2.text.toString().toDouble() * conv).toString())
+                inputEdit1.setText((inputEdit2.text.toString().toDouble() / conv).toString())
             } catch (_: Exception) {
                 inputEdit1.setText("Erreur")
                 inputEdit2.setText("Erreur")
@@ -71,18 +71,29 @@ class KgActivity : AppCompatActivity() {
         buttonMain.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_REORDER_TO_FRONT
+            intent.putExtra("fontSize", fontSize)
+            intent.putExtra("darkMode", darkMode)
             startActivity(intent)
         }
         buttonPieds.setOnClickListener {
             val intent = Intent(this, PiedsActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_REORDER_TO_FRONT
+            intent.putExtra("fontSize", fontSize)
+            intent.putExtra("darkMode", darkMode)
             startActivity(intent)
         }
         buttonPouces.setOnClickListener {
             val intent = Intent(this, PoucesActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_REORDER_TO_FRONT
+            intent.putExtra("fontSize", fontSize)
+            intent.putExtra("darkMode", darkMode)
             startActivity(intent)
         }
         buttonSpeed.setOnClickListener {
             val intent = Intent(this, SpeedActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_REORDER_TO_FRONT
+            intent.putExtra("fontSize", fontSize)
+            intent.putExtra("darkMode", darkMode)
             startActivity(intent)
         }
     }

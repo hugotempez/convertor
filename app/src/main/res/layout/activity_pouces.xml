@@ -17,7 +17,7 @@
         android:text="Menu principal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputLayoutPouces2" />
+        app:layout_constraintTop_toBottomOf="@+id/inputLayoutSpeed2" />
 
     <Button
         android:id="@+id/buttonPoucesToKg"
@@ -57,11 +57,11 @@
 
     <TextView
         android:id="@+id/textViewPoucesTitre"
-        android:layout_width="300dp"
+        android:layout_width="320dp"
         android:layout_height="30dp"
-        android:layout_marginStart="55dp"
+        android:layout_marginStart="45dp"
         android:layout_marginTop="10dp"
-        android:layout_marginEnd="55dp"
+        android:layout_marginEnd="46dp"
         android:text="Convertisseur Mètres vers Pouces"
         android:textAlignment="center"
         android:textColor="@color/black"
@@ -70,7 +70,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/inputLayoutPouces1"
+        android:id="@+id/inputLayoutSpeed1"
         android:layout_width="280dp"
         android:layout_height="50dp"
         android:layout_marginTop="80dp"
@@ -78,22 +78,22 @@
         app:layout_constraintTop_toBottomOf="@+id/textViewPoucesTitre">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/inputEditPouces1"
+            android:id="@+id/inputEditSpeed1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Valeur en mètres" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/inputLayoutPouces2"
+        android:id="@+id/inputLayoutSpeed2"
         android:layout_width="280dp"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputLayoutPouces1">
+        app:layout_constraintTop_toBottomOf="@+id/inputLayoutSpeed1">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/inputEditPouces2"
+            android:id="@+id/inputEditSpeed2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Valeur en pouces" />
@@ -109,7 +109,7 @@
         android:text="Convertir en pouces"
         android:textSize="11sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/inputLayoutPouces1"
+        app:layout_constraintStart_toEndOf="@+id/inputLayoutSpeed1"
         app:layout_constraintTop_toBottomOf="@+id/textViewPoucesTitre" />
 
     <Button
@@ -122,6 +122,6 @@
         android:text="Convertir en mètres"
         android:textSize="11dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/inputLayoutPouces2"
+        app:layout_constraintStart_toEndOf="@+id/inputLayoutSpeed2"
         app:layout_constraintTop_toBottomOf="@+id/buttonPoucesConvertToPouces" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,120 +8,121 @@
     tools:context=".SpeedActivity">
 
     <Button
-        android:id="@+id/buttonPoucesToKg2"
+        android:id="@+id/buttonSpeedToKg"
         android:layout_width="200dp"
         android:layout_height="60dp"
         android:layout_marginStart="105dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="105dp"
+        android:layout_marginEnd="106dp"
         android:text="Conversion Kg vers Livres"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonPoucesToPieds" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonSpeedToPouces" />
 
     <Button
-        android:id="@+id/buttonPoucesToSpeed2"
+        android:id="@+id/buttonSpeedToPouces"
         android:layout_width="200dp"
         android:layout_height="60dp"
-        android:layout_marginStart="105dp"
+        android:layout_marginStart="106dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="105dp"
-        android:text="Conversion mph vers kmh"
+        android:text="Conversion Pouces vers Mètres"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonPoucesToMain" />
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/inputLayoutPouces1"
-        android:layout_width="280dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="80dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewPoucesTitre">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/inputEditPouces1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Valeur en mètres" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/inputLayoutPouces2"
-        android:layout_width="280dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputLayoutPouces1">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/inputEditPouces2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Valeur en pouces" />
-    </com.google.android.material.textfield.TextInputLayout>
+        app:layout_constraintTop_toBottomOf="@+id/buttonSpeedToPieds" />
 
     <Button
-        android:id="@+id/buttonPoucesToMain2"
+        android:id="@+id/buttonSpeedToMain"
         android:layout_width="200dp"
         android:layout_height="60dp"
-        android:layout_marginStart="105dp"
+        android:layout_marginStart="106dp"
         android:layout_marginTop="130dp"
         android:layout_marginEnd="105dp"
         android:text="Menu principal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputLayoutPouces2" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonSpeedConvertToMph" />
 
     <Button
-        android:id="@+id/buttonPoucesToPieds2"
+        android:id="@+id/buttonSpeedToPieds"
         android:layout_width="200dp"
         android:layout_height="60dp"
-        android:layout_marginStart="105dp"
+        android:layout_marginStart="106dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="105dp"
         android:text="Conversion pieds vers mètres"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonPoucesToSpeed" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonSpeedToMain" />
 
     <Button
-        android:id="@+id/buttonPoucesConvertToMetres2"
-        android:layout_width="110dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="6dp"
-        android:text="Convertir en mètres"
-        android:textSize="11dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/inputLayoutPouces2"
-        app:layout_constraintTop_toBottomOf="@+id/buttonPoucesConvertToPouces" />
-
-    <Button
-        android:id="@+id/buttonPoucesConvertToPouces2"
+        android:id="@+id/buttonSpeedConvertToKmh"
         android:layout_width="110dp"
         android:layout_height="50dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="80dp"
         android:layout_marginEnd="6dp"
-        android:text="Convertir en pouces"
+        android:text="Convertir en Kmh"
+        android:textSize="11dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/inputLayoutSpeed1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSpeedTitre" />
+
+    <Button
+        android:id="@+id/buttonSpeedConvertToMph"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="6dp"
+        android:text="Convertir en Mph"
         android:textSize="11sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/inputLayoutPouces1"
-        app:layout_constraintTop_toBottomOf="@+id/textViewPoucesTitre" />
+        app:layout_constraintStart_toEndOf="@+id/inputLayoutSpeed2"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSpeedConvertToKmh" />
 
     <TextView
-        android:id="@+id/textViewPoucesTitre2"
+        android:id="@+id/textViewSpeedTitre"
         android:layout_width="300dp"
         android:layout_height="30dp"
-        android:layout_marginStart="55dp"
+        android:layout_marginStart="56dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="55dp"
-        android:text="Convertisseur Mètres vers Pouces"
+        android:text="Convertisseur Mph vers Kmh"
         android:textAlignment="center"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutSpeed1"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSpeedTitre">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputEditSpeed1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Valeur en Mph" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutSpeed2"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputLayoutSpeed1">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputEditSpeed2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Valeur en Kmh" />
+    </com.google.android.material.textfield.TextInputLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
